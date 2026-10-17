@@ -167,16 +167,19 @@
     @media (max-height: 710px) and (orientation: portrait) { .countdown-wrap { margin-top: 15px; } .countdown-unit { padding: 7px 3px; } .countdown-value { font-size: 29px; } .countdown-label { margin-top: 4px; } }
     @media (max-height: 520px) and (orientation: landscape) { .entry { overflow-y: auto; place-items: start center; } .entry-copy { padding-top: 26px; padding-bottom: calc(24px + var(--safe-bottom)); } .entry h1 { margin: 10px 0 5px; font-size: clamp(51px, 12vw, 70px); } .entry p { margin: 10px auto 17px; font-size: 18px; } .entry-skip { margin-top: 10px; } .hero { min-height: 100svh; min-height: 100dvh; } .hero-copy { margin-top: 10px; padding: 2px 14px; transform: translateY(-8px); } .hero-copy h2 { margin: 4px 0; font-size: clamp(52px, 10vw, 75px); } .hero-copy h2 em { margin: 7px 0 1px; } .hero-copy > p { font-size: 17px; } .countdown-wrap { width: min(100%, 310px); margin-top: 8px; } .countdown { gap: 4px; padding: 5px; } .countdown-unit { padding: 5px 3px; } .countdown-value { font-size: 25px; } .countdown-label { margin-top: 3px; font-size: 7px; } .hero-topline { top: 12px; } .frame { inset: 9px; } .discover { display: none; } }
     @media (prefers-reduced-motion: reduce) { *, *::before, *::after { scroll-behavior: auto !important; animation: none !important; transition: none !important; } }
+    .entry::after{z-index:4;border-color:rgba(255,223,146,.9);box-shadow:inset 0 0 45px rgba(255,190,83,.16),0 0 34px rgba(255,186,70,.2)}.entry-copy{position:relative;z-index:6;animation:royalArrival 1.05s cubic-bezier(.18,.8,.25,1) both}.entry-bloom{position:absolute;z-index:5;inset:0;pointer-events:none;overflow:hidden}.entry-bloom i{position:absolute;width:19px;height:19px;border-radius:55% 45% 58% 42%;background:radial-gradient(circle at 30% 28%,#fff8d9 0 8%,#f4d179 10% 31%,#bd6c67 65%,transparent 68%);box-shadow:0 0 18px rgba(255,211,130,.42);opacity:.8;animation:petalFloat var(--d) linear infinite}.entry-bloom i:nth-child(1){left:8%;top:21%;--d:10s}.entry-bloom i:nth-child(2){left:82%;top:16%;--d:13s;animation-delay:-5s;transform:scale(.7)}.entry-bloom i:nth-child(3){left:72%;top:64%;--d:12s;animation-delay:-8s;transform:scale(.55)}.entry-bloom i:nth-child(4){left:17%;top:72%;--d:14s;animation-delay:-3s;transform:scale(.8)}.entry-curtains{position:absolute;z-index:3;inset:0;overflow:hidden;pointer-events:none}.entry-curtains::before,.entry-curtains::after{content:'';position:absolute;top:-6%;height:112%;width:44%;background:linear-gradient(90deg,#25000d 0%,#6d092b 20%,#b3284b 48%,#52051f 78%,#1a0008 100%);box-shadow:inset -10px 0 22px rgba(0,0,0,.45),0 0 28px rgba(20,0,8,.55);transform-origin:top}.entry-curtains::before{left:-22%;border-right:2px solid rgba(248,202,109,.7);animation:curtainLeft 1.45s cubic-bezier(.2,.86,.25,1) .15s both}.entry-curtains::after{right:-22%;border-left:2px solid rgba(248,202,109,.7);animation:curtainRight 1.45s cubic-bezier(.2,.86,.25,1) .15s both}.audio-note{margin:13px 0 0!important;color:#ffe5a6;font:500 11px/1.4 'DM Sans',sans-serif!important;letter-spacing:.13em;text-transform:uppercase;opacity:.9}@keyframes royalArrival{from{opacity:0;transform:translateY(20px) scale(.97);filter:blur(5px)}to{opacity:1;transform:none;filter:none}}@keyframes curtainLeft{to{transform:translateX(-52%) skewY(-2deg)}}@keyframes curtainRight{to{transform:translateX(52%) skewY(2deg)}}@keyframes petalFloat{0%{translate:0 0;rotate:0deg;opacity:0}12%,76%{opacity:.75}100%{translate:28px -130px;rotate:155deg;opacity:0}}
   </style>
 </head>
 <body>
   <section class="entry" id="entry" aria-label="Invitation opening">
+    <div class="entry-curtains" aria-hidden="true"></div><div class="entry-bloom" aria-hidden="true"><i></i><i></i><i></i><i></i></div>
     <div class="shimmer"></div>
     <div class="entry-copy">
       <div class="overline">A Sita–Rama Kalyanam celebration</div>
       <h1>Vara Prasad<br>&amp; Gayatri</h1>
       <p>A sacred invitation, made especially for you.</p>
       <button class="gold-button" id="start" type="button">Tap to open the invitation</button>
+      <p class="audio-note">Tap to begin the music</p>
       <button class="entry-skip" id="skip" type="button">Reveal details immediately</button>
     </div>
   </section>
@@ -285,6 +288,7 @@
       </div>
     </footer>
   </main>
+  <audio id="weddingAudio" preload="auto" src="kudmayi-20-to-60.m4a"></audio>
 
   <nav class="dock" aria-label="Quick actions">
     <a href="#date" aria-label="Wedding date and time"><span class="dock-icon" aria-hidden="true">30</span><span>Date &amp; Time</span></a>
@@ -294,13 +298,16 @@
 
   <script>
     const entry = document.getElementById("entry");
+    const weddingAudio=document.getElementById('weddingAudio');let musicStarted=false;function startWeddingMusic(){if(musicStarted)return;musicStarted=true;const attempt=weddingAudio.play();if(attempt)attempt.catch(()=>{musicStarted=false;});}
     function begin(target) {
       entry.setAttribute("hidden", "");
       entry.setAttribute("aria-hidden", "true");
+      startWeddingMusic();
       if (target) document.querySelector(target).scrollIntoView({ behavior: "smooth" });
     }
     document.getElementById("start").addEventListener("click", () => begin());
     document.getElementById("skip").addEventListener("click", () => begin("#date"));
+    window.addEventListener('pagehide',()=>weddingAudio.pause());
 
     const scratch = document.getElementById("scratch");
     const canvas = document.getElementById("scratchCanvas");
