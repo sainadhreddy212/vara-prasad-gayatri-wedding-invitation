@@ -3,141 +3,413 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-  <meta name="theme-color" content="#240713">
-  <meta name="description" content="The wedding celebration of Varadha and Vijay — 25 October 2026, Palakkad.">
-  <title>Varadha &amp; Vijay | A Wedding Celebration</title>
+  <meta name="theme-color" content="#21070d">
+  <meta name="description" content="The wedding celebration of Vara Prasad and Gayatri — 30 October 2026, Ravivalasa.">
+  <title>Vara Prasad &amp; Gayatri | A Wedding Celebration</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,500;1,600&family=DM+Sans:wght@400;500&family=Great+Vibes&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,500;1,600&family=DM+Sans:wght@400;500;600&family=Great+Vibes&display=swap" rel="stylesheet">
   <style>
-    :root{--ink:#210710;--wine:#3a0b1c;--plum:#641a35;--gold:#d9ae5c;--goldlight:#f6db9c;--ivory:#fff8e9;--paper:#f9f0db;--muted:#856873;--safe-bottom:max(18px,env(safe-area-inset-bottom));}
-    *{box-sizing:border-box}html{scroll-behavior:smooth;scroll-padding-bottom:calc(96px + env(safe-area-inset-bottom));background:var(--ink)}body{margin:0;color:var(--ivory);background:var(--ink);font-family:'DM Sans',sans-serif;overflow-x:hidden}button,a{font:inherit}button{cursor:pointer}.sr-only{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0}
-    /* Opening scene: the 3D keepsake is intentionally immediate and light enough for WhatsApp browsers. */
-    .entry{position:fixed;z-index:30;inset:0;display:grid;place-items:center;overflow:hidden;background:#18040d;transition:opacity .8s cubic-bezier(.22,1,.36,1),visibility .8s}.entry[hidden]{opacity:0;visibility:hidden;pointer-events:none}.entry::before{content:'';position:absolute;inset:-8%;background:radial-gradient(circle at 50% 18%,rgba(233,179,91,.3),transparent 25%),linear-gradient(180deg,rgba(15,2,8,.12),rgba(15,2,8,.83)),url('assets/keepsake-box-3d.jpg') 50% 50%/cover;filter:saturate(1.08);animation:entryDrift 9s ease-in-out infinite alternate}.entry::after{content:'';position:absolute;inset:14px;border:1px solid rgba(246,219,156,.62);pointer-events:none}.entry-inner{z-index:1;max-width:420px;padding:48px 30px calc(48px + var(--safe-bottom));text-align:center;text-shadow:0 2px 20px rgba(20,0,7,.8)}.overline{color:var(--goldlight);font-size:10px;letter-spacing:.27em;text-transform:uppercase}.entry h1{margin:18px 0 8px;font:400 clamp(64px,18vw,96px)/.78 'Great Vibes',cursive;color:#fff5d7}.entry p{margin:17px auto 28px;font:500 20px/1.28 'Cormorant Garamond',serif;max-width:255px}.reveal{border:1px solid rgba(248,218,151,.92);padding:16px 24px;background:rgba(42,4,17,.42);color:#fff6df;font-size:10px;letter-spacing:.2em;text-transform:uppercase;min-height:48px;transition:.25s}.reveal:hover,.reveal:focus-visible{background:var(--goldlight);color:var(--wine)}.skip{display:block;margin:16px auto 0;border:0;background:transparent;color:#f2dba8;text-decoration:underline;text-underline-offset:5px;font-size:11px;opacity:.86}.entry.hide{opacity:0;visibility:hidden;pointer-events:none}
-    /* Main cinematic sequence */
-    .scene{position:relative;min-height:100svh;min-height:100dvh;display:grid;place-items:center;isolation:isolate;overflow:hidden}.palace-scene{background:#16040c}.palace-scene::before{content:'';position:absolute;z-index:-2;inset:-6%;background:linear-gradient(180deg,rgba(20,3,10,.08) 15%,rgba(20,3,10,.72) 92%),url('assets/palace-3d.jpg') center/cover;transform:scale(1.06);animation:palaceDrift 15s ease-in-out infinite alternate}.palace-scene::after{content:'';position:absolute;z-index:-1;inset:0;background:radial-gradient(ellipse at 50% 35%,transparent 10%,rgba(21,2,10,.56) 100%)}.scene-frame{position:absolute;inset:14px;border:1px solid rgba(246,219,156,.56);pointer-events:none}.topline{position:absolute;top:max(26px,env(safe-area-inset-top));left:24px;right:24px;display:flex;align-items:center;justify-content:space-between;z-index:1;color:#f7dc9c;font-size:9px;letter-spacing:.22em;text-transform:uppercase}.seal{height:42px;width:42px;border:1px solid rgba(247,219,156,.85);border-radius:50%;display:grid;place-items:center;font:500 18px 'Cormorant Garamond',serif;letter-spacing:-.05em}.scene-copy{z-index:1;width:min(92%,440px);margin-top:42px;padding:20px;text-align:center;text-shadow:0 3px 24px rgba(20,2,9,.9)}.scene-copy h2{margin:16px 0 12px;font:500 clamp(68px,18vw,112px)/.69 'Cormorant Garamond',serif;letter-spacing:-.07em}.scene-copy h2 em{display:block;margin:19px 0 3px;color:#f5d892;font:400 .52em/1 'Great Vibes',cursive;letter-spacing:0}.scene-copy p{margin:0;font:italic 22px/1.25 'Cormorant Garamond',serif}.discover{position:absolute;bottom:calc(30px + var(--safe-bottom));z-index:2;color:#fff4d7;text-decoration:none;font-size:9px;letter-spacing:.2em;text-transform:uppercase}.discover::after{content:'↓';display:block;margin-top:8px;font-size:22px}.spark,.petal{position:absolute;z-index:0;border-radius:999px;pointer-events:none}.spark{width:4px;height:4px;background:#ffe6a4;box-shadow:0 0 13px 4px rgba(255,221,135,.68);animation:twinkle 2.7s ease-in-out infinite}.spark:nth-of-type(1){top:22%;left:17%;animation-delay:-1.2s}.spark:nth-of-type(2){top:36%;right:15%;animation-delay:-.6s}.spark:nth-of-type(3){top:68%;left:13%;animation-delay:-2s}.petal{width:10px;height:15px;background:linear-gradient(135deg,#fff9ec,#e8c470);opacity:.78;filter:drop-shadow(0 3px 5px rgba(39,3,13,.6));animation:fall 9s linear infinite}.petal.p1{top:-20px;left:12%;animation-delay:-4s}.petal.p2{top:-20px;left:79%;animation-delay:-2s}.petal.p3{top:-20px;left:54%;animation-delay:-7s}
-    .section{padding:80px max(24px,calc((100vw - 520px)/2));text-align:center}.section-light{background:var(--paper);color:#32131d}.kicker{font-size:10px;letter-spacing:.24em;text-transform:uppercase;color:#a27535}.heading{margin:16px 0 20px;font:500 clamp(42px,12vw,60px)/.92 'Cormorant Garamond',serif}.bodycopy{max-width:480px;margin:auto;font:500 21px/1.45 'Cormorant Garamond',serif}.hairline{display:flex;gap:10px;align-items:center;justify-content:center;max-width:165px;margin:26px auto;color:var(--gold)}.hairline::after,.hairline::before{content:'';height:1px;flex:1;background:currentColor}
-    /* A small 3D keepsake scene becomes the date reveal rather than a plain card. */
-    .keepsake{position:relative;overflow:hidden;min-height:680px;padding:74px 24px;background:#250711;display:grid;place-items:end center;isolation:isolate}.keepsake-bg{position:absolute;z-index:-2;inset:-8%;background:linear-gradient(180deg,rgba(29,3,12,.05),#260710 84%),url('assets/keepsake-box-3d.jpg') center/cover;transform:scale(1.12);animation:boxBreathe 8s ease-in-out infinite alternate}.keepsake::after{content:'';position:absolute;z-index:-1;inset:0;background:radial-gradient(circle at 50% 35%,transparent,rgba(19,1,8,.54) 83%)}.scratch-wrap{width:min(100%,425px);position:relative;min-height:298px;border:1px solid rgba(246,219,156,.86);overflow:hidden;box-shadow:0 22px 45px rgba(0,0,0,.32)}.date-card{height:298px;display:grid;place-items:center;padding:27px;background:linear-gradient(150deg,#fff8e8,#dfbc75 130%);color:#482039;text-align:center}.date-card .kicker{color:#80522e}.date-card .date-number{margin:4px 0 -4px;color:#63203b;font:500 96px/.82 'Cormorant Garamond',serif}.date-card h3{margin:5px 0 17px;color:#4b1830;font:500 43px/1 'Cormorant Garamond',serif}.date-card p{margin:0;font-size:10px;letter-spacing:.14em;line-height:1.7}.scratch-canvas{position:absolute;inset:0;width:100%;height:100%;touch-action:none;cursor:crosshair}.scratch-guide{position:absolute;inset:auto 0 20px;text-align:center;pointer-events:none;color:#fff1c6;font-size:10px;letter-spacing:.2em;text-transform:uppercase;text-shadow:0 1px 5px rgba(39,0,10,.6)}.reveal-now{position:absolute;right:14px;top:14px;z-index:2;border:1px solid rgba(255,243,204,.75);background:rgba(52,4,20,.37);color:#fff2cf;padding:8px 10px;font-size:9px;letter-spacing:.12em;text-transform:uppercase}.scratch-wrap.done .scratch-canvas,.scratch-wrap.done .scratch-guide,.scratch-wrap.done .reveal-now{opacity:0;pointer-events:none}.scratch-wrap .scratch-canvas{transition:opacity .45s}.keepsake-caption{width:min(100%,425px);margin-top:23px;text-align:center;text-shadow:0 2px 12px #16030b}.keepsake-caption p{margin:6px 0;font:italic 20px/1.3 'Cormorant Garamond',serif}.keepsake-caption .kicker{color:#f0ce86}
-    .venue{position:relative;min-height:630px;display:grid;align-items:end;padding:70px max(24px,calc((100vw - 520px)/2));overflow:hidden;text-align:center;background:#16040c}.venue::before{content:'';position:absolute;inset:-4%;background:linear-gradient(0deg,#220510 4%,rgba(35,3,13,.12) 70%),url('assets/palace-3d.jpg') center 80%/cover;filter:saturate(.9) brightness(.9);transform:scale(1.1);animation:venueMove 16s ease-in-out infinite alternate}.venue-card{position:relative;padding:32px 22px;background:rgba(42,7,22,.77);border:1px solid rgba(246,219,156,.74);backdrop-filter:blur(4px)}.venue-card h3{margin:12px 0;font:500 42px/.95 'Cormorant Garamond',serif}.venue-card p{margin:5px 0;font-size:12px;letter-spacing:.03em;line-height:1.55}.button{display:inline-flex;align-items:center;justify-content:center;min-height:48px;padding:14px 20px;margin-top:22px;border:1px solid #efcc82;background:#f1d08c;color:#351022;text-decoration:none;font-size:10px;letter-spacing:.18em;text-transform:uppercase;transition:.22s}.button:hover,.button:focus-visible{background:#fff1c9;transform:translateY(-2px)}
-    .details{padding-bottom:96px}.family{max-width:480px;margin:36px auto;text-align:left;border-left:1px solid var(--gold);padding:1px 0 1px 22px}.family h4{margin:0 0 8px;color:#a77b3c;font-size:10px;letter-spacing:.21em;text-transform:uppercase}.family p{margin:0;font:500 23px/1.25 'Cormorant Garamond',serif}.family small{display:block;margin-top:8px;color:#775f64;font-size:11px;line-height:1.55}.ending{padding:80px 25px calc(90px + var(--safe-bottom));background:radial-gradient(ellipse at 50% 0,#722242 0,var(--wine) 38%,#250611 100%);text-align:center}.ending h2{margin:13px 0;font:400 clamp(58px,16vw,86px)/.85 'Great Vibes',cursive;color:#f8dda0}.ending p{max-width:350px;margin:0 auto;font:italic 21px/1.35 'Cormorant Garamond',serif}.dock{position:fixed;z-index:12;bottom:0;left:0;right:0;display:flex;justify-content:center;gap:1px;padding:10px max(10px,env(safe-area-inset-left)) calc(10px + env(safe-area-inset-bottom)) max(10px,env(safe-area-inset-right));background:rgba(28,3,12,.82);backdrop-filter:blur(16px);border-top:1px solid rgba(246,219,156,.3)}.dock a,.dock button{flex:1;max-width:175px;min-height:43px;border:0;background:transparent;color:#fbe9bc;text-decoration:none;font-size:9px;letter-spacing:.12em;text-transform:uppercase}.dock a+a,.dock button+button{border-left:1px solid rgba(246,219,156,.25)}.modal{position:fixed;z-index:25;inset:0;display:none;place-items:center;padding:24px;background:rgba(18,1,8,.78);backdrop-filter:blur(7px)}.modal.open{display:grid}.modal-card{width:min(100%,410px);padding:37px 26px;background:var(--paper);color:#351321;text-align:center;box-shadow:0 28px 75px rgba(0,0,0,.4)}.modal-card h2{margin:0 0 15px;font:500 42px/.95 'Cormorant Garamond',serif}.modal-card p{font:500 19px/1.35 'Cormorant Garamond',serif}.close{margin-top:17px;border:0;background:transparent;text-decoration:underline;text-underline-offset:5px;color:#663047;font-size:12px}
-    @keyframes entryDrift{to{transform:scale(1.08) translate3d(0,-1.2%,0)}}@keyframes palaceDrift{to{transform:scale(1.13) translate3d(0,-1.5%,0)}}@keyframes boxBreathe{to{transform:scale(1.18) translate3d(0,-1.5%,0)}}@keyframes venueMove{to{transform:scale(1.18) translate3d(0,-1.7%,0)}}@keyframes twinkle{50%{transform:scale(1.9);opacity:.36}}@keyframes fall{to{transform:translate3d(35px,115svh,0) rotate(330deg);opacity:.1}}
-    @media (min-width:700px){.scene,.entry{max-width:570px;margin:auto;box-shadow:0 0 80px #000}.discover{bottom:8px}.dock{max-width:570px;left:50%;right:auto;width:100%;transform:translateX(-50%)}}@media (prefers-reduced-motion:reduce){*,*::before,*::after{scroll-behavior:auto!important;animation:none!important;transition:none!important}}
-    /* The GitHub upload bundle keeps these JPEGs at the repository root. */
-    .entry::before{background-image:radial-gradient(circle at 50% 18%,rgba(233,179,91,.3),transparent 25%),linear-gradient(180deg,rgba(15,2,8,.12),rgba(15,2,8,.83)),url('keepsake-box-3d.jpg')}
-    .palace-scene::before{background-image:linear-gradient(180deg,rgba(20,3,10,.08) 15%,rgba(20,3,10,.72) 92%),url('palace-3d.jpg')}
-    .keepsake-bg{background-image:linear-gradient(180deg,rgba(29,3,12,.05),#260710 84%),url('keepsake-box-3d.jpg')}
-    .venue::before{background-image:linear-gradient(0deg,#220510 4%,rgba(35,3,13,.12) 70%),url('palace-3d.jpg')}
-    /* Refined quick-action dock: spacious, thumb-friendly, and clear at a glance. */
-    .dock{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:8px;align-items:stretch;padding:10px max(14px,env(safe-area-inset-left)) calc(12px + env(safe-area-inset-bottom)) max(14px,env(safe-area-inset-right));background:linear-gradient(180deg,rgba(28,3,12,.78),rgba(28,3,12,.97));box-shadow:0 -14px 32px rgba(17,0,8,.42)}
-    .dock a,.dock button{max-width:none;min-width:0;min-height:56px;padding:8px 5px;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:4px;border:1px solid rgba(246,219,156,.36);border-radius:4px;background:rgba(122,31,61,.3);color:#fff1c6;font-size:9px;font-weight:600;line-height:1.1;letter-spacing:.1em;transition:transform .2s ease,background .2s ease,color .2s ease}
-    .dock a+a,.dock button+button{border-left:1px solid rgba(246,219,156,.36)}
-    .dock a:hover,.dock a:focus-visible,.dock button:hover,.dock button:focus-visible{transform:translateY(-2px);outline:none;background:rgba(174,86,111,.48)}
-    .dock .dock-icon{display:block;color:#f5d892;font:500 17px/1 'Cormorant Garamond',serif;letter-spacing:0}
-    .dock .dock-label{white-space:nowrap}
-    .dock .dock-rsvp{background:#efd28f;color:#431225;border-color:#f9e4a8}
-    .dock .dock-rsvp .dock-icon{color:#5f2340}
-    .dock .dock-rsvp:hover,.dock .dock-rsvp:focus-visible{background:#fff0c7;color:#351022}
-    /* A live, ceremonial countdown gives guests one clear moment to anticipate. */
-    .countdown-wrap{width:min(100%,390px);margin:26px auto 0;text-align:center}.countdown-kicker{margin-bottom:8px;color:#f9df9f;font-size:9px;font-weight:600;letter-spacing:.22em;text-transform:uppercase}.countdown{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:6px;padding:7px;border:1px solid rgba(246,219,156,.48);background:rgba(37,5,19,.38);backdrop-filter:blur(5px)}.countdown-unit{min-width:0;padding:10px 3px 9px;border:1px solid rgba(246,219,156,.23);background:linear-gradient(145deg,rgba(122,33,66,.55),rgba(45,6,22,.45))}.countdown-value{display:block;color:#fff3cb;font:500 clamp(30px,8vw,43px)/.85 'Cormorant Garamond',serif;font-variant-numeric:tabular-nums;letter-spacing:-.03em;text-shadow:0 2px 12px rgba(20,0,7,.6)}.countdown-label{display:block;margin-top:6px;color:#f7d990;font-size:8px;font-weight:600;letter-spacing:.14em;text-transform:uppercase}@media (max-height:720px){.countdown-wrap{margin-top:15px}.countdown-unit{padding:7px 3px}.countdown-value{font-size:29px}.countdown-label{margin-top:4px}}
-    /* Preview direction: one uninterrupted visual story instead of colour-blocked pages. */
-    body{background:#1f0610}main.invitation-flow{position:relative;isolation:isolate;overflow:hidden;background:linear-gradient(180deg,#18040d 0%,#3d0d23 18%,#31091b 50%,#571632 82%,#260611 100%)}main.invitation-flow::before{content:'';position:absolute;z-index:-2;inset:0;background:radial-gradient(ellipse at 50% 18%,rgba(219,159,80,.17),transparent 27%),radial-gradient(ellipse at 50% 72%,rgba(187,84,121,.16),transparent 31%),linear-gradient(90deg,rgba(247,215,143,.11),transparent 13%,transparent 87%,rgba(247,215,143,.11));pointer-events:none}main.invitation-flow::after{content:'';position:absolute;z-index:-1;inset:0;border-left:1px solid rgba(246,219,156,.22);border-right:1px solid rgba(246,219,156,.22);pointer-events:none}.invitation-flow>section,.invitation-flow>footer{position:relative;background:transparent}.invitation-flow .scene{min-height:88svh;min-height:88dvh}.invitation-flow .palace-scene::before{inset:-4%;background:linear-gradient(180deg,rgba(21,2,9,.1),rgba(33,4,16,.68) 83%),url('palace-3d.jpg') center/cover}.invitation-flow .palace-scene::after{background:radial-gradient(ellipse at 50% 37%,transparent 12%,rgba(23,2,10,.62) 100%)}.invitation-flow .section{padding:62px max(24px,calc((100vw - 520px)/2))}.invitation-flow .section-light{color:#fff5df;background:transparent}.invitation-flow .section-light .kicker{color:#f0cd87}.invitation-flow .section-light .heading{color:#fff4d6}.invitation-flow .bodycopy{max-width:455px;color:#f8ead0;text-shadow:0 2px 15px rgba(20,0,7,.48)}.invitation-flow #blessings{padding-top:58px;padding-bottom:46px}.invitation-flow #blessings::after{content:'✦';display:block;margin:40px auto 0;color:#e9c77e;font-size:15px;text-shadow:0 0 13px rgba(255,225,151,.5)}.invitation-flow .keepsake{display:block;min-height:0;padding:22px 24px 58px;background:transparent;overflow:hidden}.invitation-flow .keepsake-bg{inset:0;opacity:.34;filter:saturate(.82) brightness(.68);transform:scale(1.04);animation:none}.invitation-flow .keepsake::after{background:linear-gradient(180deg,rgba(49,8,25,.1),rgba(35,5,17,.52))}.invitation-flow .scratch-wrap{margin:0 auto}.invitation-flow .keepsake-caption{margin-top:21px}.invitation-flow .venue{display:block;min-height:0;padding:6px max(24px,calc((100vw - 520px)/2)) 56px;background:transparent}.invitation-flow .venue::before{display:none}.invitation-flow .venue-card{width:min(100%,425px);margin:0 auto;padding:34px 22px;background:linear-gradient(145deg,rgba(101,25,53,.56),rgba(37,4,18,.72));border-color:rgba(246,219,156,.68);box-shadow:0 17px 44px rgba(16,0,8,.2)}.invitation-flow .details{padding-top:47px;padding-bottom:48px}.invitation-flow .family-letter{max-width:455px;margin:28px auto 0;padding:18px;border:1px solid rgba(246,219,156,.4);background:linear-gradient(145deg,rgba(92,22,48,.36),rgba(35,5,17,.48));box-shadow:0 16px 36px rgba(13,0,6,.15)}.invitation-flow .family{max-width:none;margin:0;padding:21px 14px;border:0;border-left:2px solid #e6bd69;background:transparent}.invitation-flow .family+.family{margin-top:10px;border-top:1px solid rgba(246,219,156,.2)}.invitation-flow .family h4{color:#efd08b}.invitation-flow .family small{color:#eadcca}.invitation-flow .ending{padding:55px 25px calc(128px + var(--safe-bottom));background:transparent}.invitation-flow .ending h2{color:#ffe1a0}.invitation-flow .ending p{color:#fff1d2}.invitation-flow .hairline{color:#e5be6b}.invitation-flow .button{box-shadow:0 9px 18px rgba(11,0,5,.2)}.dock{left:50%;right:auto;width:min(calc(100% - 24px),540px);padding:7px;bottom:calc(10px + env(safe-area-inset-bottom));transform:translateX(-50%);border:1px solid rgba(246,219,156,.47);border-radius:16px;background:rgba(38,4,18,.88);box-shadow:0 14px 32px rgba(12,0,6,.42)}.dock a,.dock button{min-height:50px;border-radius:10px}@media (max-width:420px){main.invitation-flow::after{inset:0 10px}.invitation-flow .section{padding-left:24px;padding-right:24px}}@media (max-width:420px) and (max-height:720px) and (orientation:portrait){.invitation-flow .scene{min-height:640px;min-height:max(640px,100svh);min-height:max(640px,100dvh)}.invitation-flow .scene-copy{margin-top:54px;padding:12px 16px}.discover{bottom:calc(36px + var(--safe-bottom))}}@media (max-width:360px){.invitation-flow .family-letter{padding:12px}.invitation-flow .family{padding:18px 10px}.invitation-flow .family p{font-size:clamp(20px,6.1vw,23px);line-height:1.28}.invitation-flow .family small{font-size:12px;line-height:1.55}}@media (max-width:340px){.topline{left:18px;right:18px;letter-spacing:.16em}.scene-frame,.entry::after{inset:10px}}@media (max-height:520px) and (orientation:landscape){.entry{overflow-y:auto;place-items:start center}.entry-inner{padding:28px 30px calc(26px + var(--safe-bottom))}.entry h1{margin:12px 0 6px;font-size:clamp(52px,12vw,72px)}.entry p{margin:10px auto 17px;font-size:18px}.skip{margin-top:10px}.invitation-flow .scene{min-height:100svh;min-height:100dvh}.scene-copy{margin-top:8px;padding:4px 14px;transform:translateY(-6px)}.scene-copy h2{margin:6px 0;font-size:clamp(54px,10vw,76px);line-height:.7}.scene-copy h2 em{margin:9px 0 1px}.scene-copy p{font-size:17px}.countdown-wrap{width:min(100%,310px);margin-top:8px}.countdown-kicker{margin-bottom:5px;font-size:8px}.countdown{gap:4px;padding:5px}.countdown-unit{padding:5px 3px}.countdown-value{font-size:25px}.countdown-label{margin-top:3px;font-size:7px}.topline{top:12px}.scene-frame{inset:9px}.discover{display:none}.dock{bottom:calc(5px + env(safe-area-inset-bottom))}}
-    /* Keep the original foil card; only the scratch instruction is intentionally larger. */
-    .invitation-flow .scratch-guide{bottom:18px;color:#fff3cb;font-size:clamp(24px,7vw,30px);font-weight:600;letter-spacing:.14em;line-height:1;text-shadow:0 2px 10px rgba(36,0,11,.78)}
+    :root {
+      --wine: #3a081a;
+      --ink: #1e050d;
+      --plum: #631a37;
+      --rose: #9b3155;
+      --gold: #d8af63;
+      --gold-light: #f8dfa4;
+      --ivory: #fff5df;
+      --safe-bottom: max(16px, env(safe-area-inset-bottom));
+      --page-width: 570px;
+    }
+
+    * { box-sizing: border-box; }
+    html { background: var(--ink); scroll-behavior: smooth; scroll-padding-bottom: 96px; }
+    body { margin: 0; min-width: 280px; overflow-x: hidden; color: var(--ivory); background: var(--ink); font-family: "DM Sans", sans-serif; }
+    a, button { font: inherit; }
+    button { cursor: pointer; }
+    .sr-only { position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0; }
+    .shimmer { position: absolute; inset: 0; z-index: 0; pointer-events: none; overflow: hidden; }
+    .shimmer::before, .shimmer::after { content: ""; position: absolute; border-radius: 50%; filter: blur(8px); opacity: .68; }
+    .shimmer::before { width: 4px; height: 4px; top: 18%; left: 14%; background: #fff0ba; box-shadow: 30px 80px 0 #fff0ba, 278px 52px 0 #f7d783, 322px 420px 0 #fff0ba, 75px 520px 0 #f7d783; animation: sparkle 3.4s ease-in-out infinite alternate; }
+    .shimmer::after { width: 260px; height: 420px; top: -8%; left: -70px; background: linear-gradient(105deg, transparent 20%, rgba(255, 223, 157, .14) 48%, transparent 74%); transform: rotate(12deg); animation: glowpass 12s linear infinite; }
+
+    /* Opening keepsake */
+    .entry {
+      position: fixed; z-index: 50; inset: 0; display: grid; place-items: center; overflow: hidden;
+      background: #160309; transition: opacity .75s cubic-bezier(.22, 1, .36, 1), visibility .75s;
+    }
+    .entry[hidden] { opacity: 0; visibility: hidden; pointer-events: none; }
+    .entry::before {
+      content: ""; position: absolute; inset: -5%;
+      background: linear-gradient(180deg, rgba(33, 3, 14, .1), rgba(24, 2, 10, .85) 84%), url("assets/venkateswara-padmavathi.png") center 45% / cover;
+      transform: scale(1.05); animation: entry-drift 13s ease-in-out infinite alternate;
+    }
+    .entry::after, .frame { content: ""; position: absolute; inset: 14px; border: 1px solid rgba(249, 221, 160, .66); pointer-events: none; }
+    .entry-copy { position: relative; z-index: 1; width: min(100%, 440px); padding: 42px 28px calc(44px + var(--safe-bottom)); text-align: center; text-shadow: 0 3px 22px rgba(23, 0, 8, .94); }
+    .overline { color: var(--gold-light); font-size: 10px; font-weight: 600; letter-spacing: .24em; text-transform: uppercase; }
+    .entry h1 { margin: 18px 0 8px; color: #fff4d3; font: 400 clamp(61px, 17vw, 90px) / .77 "Great Vibes", cursive; }
+    .entry p { max-width: 272px; margin: 18px auto 28px; font: 500 21px / 1.25 "Cormorant Garamond", serif; }
+    .gold-button {
+      display: inline-flex; align-items: center; justify-content: center; min-height: 50px; padding: 15px 22px;
+      border: 1px solid rgba(255, 227, 163, .9); background: rgba(72, 9, 31, .56); color: #fff3d1;
+      box-shadow: 0 8px 20px rgba(0, 0, 0, .2); font-size: 10px; font-weight: 600; letter-spacing: .17em; text-decoration: none; text-transform: uppercase; transition: transform .22s, background .22s, color .22s;
+    }
+    .gold-button:hover, .gold-button:focus-visible { transform: translateY(-2px); background: var(--gold-light); color: var(--wine); outline: none; }
+    .entry-skip { display: block; margin: 16px auto 0; padding: 3px; border: 0; background: transparent; color: #f9e1a4; text-decoration: underline; text-underline-offset: 5px; font-size: 11px; }
+
+    /* One uninterrupted invitation story */
+    main { position: relative; isolation: isolate; overflow: hidden; max-width: var(--page-width); margin: auto; background: linear-gradient(180deg, #19040c 0%, #3e0d22 20%, #290616 53%, #5b1735 82%, #25050f 100%); box-shadow: 0 0 90px rgba(0, 0, 0, .84); }
+    main::before { content: ""; position: absolute; z-index: -2; inset: 0; background: radial-gradient(ellipse at 50% 16%, rgba(238, 185, 92, .18), transparent 24%), radial-gradient(ellipse at 50% 72%, rgba(214, 108, 145, .18), transparent 34%), linear-gradient(90deg, rgba(255, 226, 163, .1), transparent 12%, transparent 88%, rgba(255, 226, 163, .1)); }
+    main::after { content: ""; position: absolute; z-index: -1; inset: 0; border-left: 1px solid rgba(249, 221, 160, .24); border-right: 1px solid rgba(249, 221, 160, .24); pointer-events: none; }
+    section, footer { position: relative; }
+    .hero { min-height: 100svh; min-height: 100dvh; display: grid; place-items: center; overflow: hidden; }
+    .hero::before { content: ""; position: absolute; z-index: -2; inset: -6%; background: linear-gradient(180deg, rgba(29, 3, 12, .05) 10%, rgba(25, 2, 10, .78) 91%), url("assets/mandap-hero.png") center / cover; transform: scale(1.07); animation: hero-drift 17s ease-in-out infinite alternate; }
+    .hero::after { content: ""; position: absolute; z-index: -1; inset: 0; background: radial-gradient(ellipse at 50% 35%, transparent 10%, rgba(20, 1, 8, .58) 100%); }
+    .hero-topline { position: absolute; z-index: 2; top: max(26px, env(safe-area-inset-top)); left: 24px; right: 24px; display: flex; align-items: center; justify-content: space-between; color: var(--gold-light); font-size: 9px; letter-spacing: .18em; text-transform: uppercase; }
+    .seal { display: grid; width: 42px; height: 42px; place-items: center; border: 1px solid rgba(249, 221, 160, .9); border-radius: 50%; color: #fff3d2; font: 500 17px "Cormorant Garamond", serif; letter-spacing: -.05em; }
+    .hero-copy { position: relative; z-index: 2; width: min(93%, 465px); margin-top: 36px; padding: 22px 20px; text-align: center; text-shadow: 0 3px 24px rgba(24, 1, 8, .92); }
+    .hero-copy h2 { margin: 18px 0 12px; color: #fff5d7; font: 500 clamp(58px, 16vw, 97px) / .72 "Cormorant Garamond", serif; letter-spacing: -.075em; }
+    .hero-copy h2 em { display: block; margin: 17px 0 3px; color: var(--gold-light); font: 400 .54em / 1 "Great Vibes", cursive; letter-spacing: 0; }
+    .hero-copy > p { margin: 0; font: italic 22px / 1.28 "Cormorant Garamond", serif; }
+    .discover { position: absolute; z-index: 3; bottom: calc(35px + var(--safe-bottom)); color: #fff4d7; font-size: 9px; letter-spacing: .19em; text-decoration: none; text-transform: uppercase; }
+    .discover::after { content: "↓"; display: block; margin-top: 8px; font-size: 23px; }
+    .petal { position: absolute; z-index: 1; width: 10px; height: 15px; border-radius: 65% 35% 65% 35%; background: linear-gradient(135deg, #fff9ec, #e8c470); opacity: .78; filter: drop-shadow(0 3px 5px rgba(39, 3, 13, .6)); animation: falling 9s linear infinite; }
+    .petal.p1 { top: -20px; left: 12%; animation-delay: -4s; }
+    .petal.p2 { top: -20px; left: 79%; animation-delay: -2s; }
+    .petal.p3 { top: -20px; left: 54%; animation-delay: -7s; }
+
+    .countdown-wrap { width: min(100%, 395px); margin: 26px auto 0; text-align: center; }
+    .countdown-kicker { margin-bottom: 8px; color: #f9df9f; font-size: 9px; font-weight: 600; letter-spacing: .22em; text-transform: uppercase; }
+    .countdown { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 6px; padding: 7px; border: 1px solid rgba(249, 221, 160, .48); background: rgba(37, 5, 19, .38); backdrop-filter: blur(5px); }
+    .countdown-unit { min-width: 0; padding: 10px 3px 9px; border: 1px solid rgba(249, 221, 160, .23); background: linear-gradient(145deg, rgba(122, 33, 66, .55), rgba(45, 6, 22, .45)); }
+    .countdown-value { display: block; color: #fff3cb; font: 500 clamp(30px, 8vw, 43px) / .85 "Cormorant Garamond", serif; font-variant-numeric: tabular-nums; letter-spacing: -.03em; text-shadow: 0 2px 12px rgba(20, 0, 7, .6); }
+    .countdown-label { display: block; margin-top: 6px; color: #f7d990; font-size: 8px; font-weight: 600; letter-spacing: .14em; text-transform: uppercase; }
+
+    .section { padding: 64px max(24px, calc((100vw - 520px) / 2)); text-align: center; }
+    .kicker { color: #efd08b; font-size: 10px; font-weight: 600; letter-spacing: .24em; text-transform: uppercase; }
+    .heading { margin: 15px 0 18px; color: #fff4d6; font: 500 clamp(41px, 11.5vw, 59px) / .95 "Cormorant Garamond", serif; }
+    .bodycopy { max-width: 455px; margin: auto; color: #f8ead0; font: 500 21px / 1.45 "Cormorant Garamond", serif; text-shadow: 0 2px 15px rgba(20, 0, 7, .48); }
+    .hairline { display: flex; align-items: center; justify-content: center; gap: 10px; width: min(165px, 100%); margin: 26px auto; color: #e9c77e; }
+    .hairline::before, .hairline::after { content: ""; height: 1px; flex: 1; background: currentColor; }
+    .blessing::after { content: "✦"; display: block; margin: 38px auto 0; color: #e9c77e; font-size: 15px; text-shadow: 0 0 13px rgba(255, 225, 151, .5); }
+
+    /* Scratch reveal */
+    .keepsake { padding: 22px 24px 58px; overflow: hidden; }
+    .keepsake::before { content: ""; position: absolute; z-index: -2; inset: 0; opacity: .36; background: linear-gradient(180deg, rgba(49, 8, 25, .08), rgba(35, 5, 17, .58)), url("assets/saptapadi-fire.png") center / cover; filter: saturate(.82) brightness(.7); }
+    .keepsake::after { content: ""; position: absolute; z-index: -1; inset: 0; background: linear-gradient(180deg, rgba(49, 8, 25, .1), rgba(35, 5, 17, .5)); }
+    .scratch-wrap { position: relative; width: min(100%, 425px); min-height: 324px; margin: 0 auto; overflow: hidden; border: 1px solid rgba(249, 221, 160, .9); box-shadow: 0 24px 46px rgba(0, 0, 0, .32); }
+    .date-card { display: grid; min-height: 324px; place-items: center; padding: 27px; color: #482039; text-align: center; background: linear-gradient(150deg, #fff9ea, #e1bf7b 130%); }
+    .date-card .kicker { color: #80522e; }
+    .date-number { margin: 4px 0 -2px; color: #63203b; font: 500 96px / .82 "Cormorant Garamond", serif; }
+    .date-card h3 { margin: 6px 0 18px; color: #4b1830; font: 500 39px / 1 "Cormorant Garamond", serif; }
+    .date-card p { margin: 0; font-size: 10px; font-weight: 600; letter-spacing: .14em; line-height: 1.8; }
+    .scratch-canvas { position: absolute; inset: 0; z-index: 1; width: 100%; height: 100%; touch-action: none; cursor: crosshair; }
+    .scratch-guide { position: absolute; z-index: 2; right: 0; bottom: 18px; left: 0; color: #fff3cb; font-size: clamp(24px, 7vw, 30px); font-weight: 600; letter-spacing: .14em; line-height: 1; pointer-events: none; text-align: center; text-shadow: 0 2px 10px rgba(36, 0, 11, .78); text-transform: uppercase; }
+    .scratch-hint { position: absolute; z-index: 2; top: calc(50% - 14px); right: 0; left: 0; color: rgba(255, 246, 214, .88); font: italic 21px / 1.2 "Cormorant Garamond", serif; pointer-events: none; text-align: center; text-shadow: 0 2px 10px rgba(36, 0, 11, .8); }
+    .reveal-now { position: absolute; z-index: 3; top: 14px; right: 14px; border: 1px solid rgba(255, 243, 204, .75); background: rgba(52, 4, 20, .4); color: #fff2cf; padding: 8px 10px; font-size: 9px; font-weight: 600; letter-spacing: .12em; text-transform: uppercase; }
+    .scratch-wrap.done .scratch-canvas, .scratch-wrap.done .scratch-guide, .scratch-wrap.done .scratch-hint, .scratch-wrap.done .reveal-now { opacity: 0; pointer-events: none; }
+    .scratch-wrap .scratch-canvas, .scratch-wrap .scratch-guide, .scratch-wrap .scratch-hint, .scratch-wrap .reveal-now { transition: opacity .45s ease; }
+    .keepsake-caption { width: min(100%, 425px); margin: 21px auto 0; text-align: center; text-shadow: 0 2px 12px #16030b; }
+    .keepsake-caption p { margin: 7px 0; color: #fff1d2; font: italic 20px / 1.3 "Cormorant Garamond", serif; }
+
+    /* Ceremony and venue cards */
+    .event-area { padding: 0 24px 54px; }
+    .event-card, .venue-card, .family-letter { width: min(100%, 425px); margin: auto; border: 1px solid rgba(249, 221, 160, .68); background: linear-gradient(145deg, rgba(101, 25, 53, .58), rgba(37, 4, 18, .74)); box-shadow: 0 17px 44px rgba(16, 0, 8, .22); backdrop-filter: blur(5px); }
+    .event-card { overflow: hidden; }
+    .event-row { padding: 30px 21px; text-align: center; }
+    .event-row + .event-row { border-top: 1px solid rgba(249, 221, 160, .28); }
+    .event-label { color: #f1d494; font-size: 10px; font-weight: 600; letter-spacing: .2em; text-transform: uppercase; }
+    .event-row h3 { margin: 10px 0 6px; color: #fff4d6; font: 500 clamp(31px, 9vw, 42px) / .94 "Cormorant Garamond", serif; }
+    .event-row p { margin: 4px 0; color: #ffe9b7; font: 500 16px / 1.35 "Cormorant Garamond", serif; }
+    .event-time { color: #fff5d7 !important; font-size: 24px !important; }
+    .venue { min-height: 590px; display: grid; align-items: end; padding: 62px max(24px, calc((100vw - 520px) / 2)); overflow: hidden; }
+    .venue::before { content: ""; position: absolute; z-index: -2; inset: -5%; background: linear-gradient(0deg, rgba(34, 5, 16, .92) 4%, rgba(35, 3, 13, .13) 72%), url("assets/mandap-hero.png") center 84% / cover; filter: saturate(.92) brightness(.93); transform: scale(1.09); animation: venue-move 16s ease-in-out infinite alternate; }
+    .venue::after { content: ""; position: absolute; z-index: -1; inset: 0; background: radial-gradient(ellipse at 50% 37%, transparent 12%, rgba(23, 2, 10, .62) 100%); }
+    .venue-card { padding: 33px 22px; text-align: center; }
+    .venue-card h3 { margin: 12px 0; color: #fff5d7; font: 500 42px / .96 "Cormorant Garamond", serif; }
+    .venue-card p { margin: 5px 0; color: #fff0cf; font-size: 12px; line-height: 1.55; }
+    .venue-card .gold-button { margin-top: 22px; background: #f1d08c; color: #351022; }
+    .venue-card .gold-button:hover, .venue-card .gold-button:focus-visible { background: #fff1c9; }
+
+    .details { padding-bottom: 46px; }
+    .family-letter { padding: 17px; text-align: left; }
+    .family { padding: 21px 14px; border-left: 2px solid #e6bd69; }
+    .family + .family { margin-top: 10px; border-top: 1px solid rgba(249, 221, 160, .2); }
+    .family h3 { margin: 0 0 8px; color: #efd08b; font-size: 10px; letter-spacing: .21em; text-transform: uppercase; }
+    .family p { margin: 0; color: #fff2d4; font: 500 24px / 1.22 "Cormorant Garamond", serif; }
+    .family small { display: block; margin-top: 8px; color: #eadcca; font-size: 12px; line-height: 1.55; }
+
+    .closing { min-height: 680px; display: grid; align-items: end; padding: 52px 25px calc(126px + var(--safe-bottom)); overflow: hidden; text-align: center; }
+    .closing::before { content: ""; position: absolute; z-index: -2; inset: -3%; background: linear-gradient(180deg, rgba(36, 3, 16, .25), rgba(34, 3, 14, .84)), url("assets/couple-photo-final.png") center / cover; transform: scale(1.06); animation: closing-drift 15s ease-in-out infinite alternate; }
+    .closing::after { content: ""; position: absolute; z-index: -1; inset: 0; background: radial-gradient(ellipse at 50% 25%, transparent 18%, rgba(25, 2, 10, .75) 100%); }
+    .closing-copy { position: relative; z-index: 1; margin: auto; text-shadow: 0 3px 22px rgba(20, 0, 7, .95); }
+    .closing h2 { margin: 13px 0; color: #ffe1a0; font: 400 clamp(58px, 16vw, 86px) / .85 "Great Vibes", cursive; }
+    .closing p { max-width: 350px; margin: auto; color: #fff1d2; font: italic 21px / 1.35 "Cormorant Garamond", serif; }
+    .calendar-link { margin-top: 24px; }
+
+    /* Thumb-first dock */
+    .dock { position: fixed; z-index: 35; bottom: calc(10px + env(safe-area-inset-bottom)); left: 50%; display: grid; width: min(calc(100% - 24px), 540px); grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 8px; padding: 7px; transform: translateX(-50%); border: 1px solid rgba(249, 221, 160, .47); border-radius: 16px; background: rgba(38, 4, 18, .9); box-shadow: 0 14px 32px rgba(12, 0, 6, .44); backdrop-filter: blur(16px); }
+    .dock a { display: flex; min-width: 0; min-height: 50px; flex-direction: column; align-items: center; justify-content: center; gap: 4px; border: 1px solid rgba(249, 221, 160, .36); border-radius: 10px; background: rgba(122, 31, 61, .3); color: #fff1c6; font-size: 9px; font-weight: 600; letter-spacing: .09em; line-height: 1.1; text-align: center; text-decoration: none; text-transform: uppercase; transition: transform .2s ease, background .2s ease, color .2s ease; }
+    .dock a:hover, .dock a:focus-visible { transform: translateY(-2px); background: rgba(174, 86, 111, .48); outline: none; }
+    .dock .dock-icon { display: block; color: #f5d892; font: 500 17px / 1 "Cormorant Garamond", serif; letter-spacing: 0; }
+    .dock .dock-emphasis { border-color: #f9e4a8; background: #efd28f; color: #431225; }
+    .dock .dock-emphasis .dock-icon { color: #5f2340; }
+
+    @keyframes entry-drift { to { transform: scale(1.12) translate3d(0, -1.3%, 0); } }
+    @keyframes hero-drift { to { transform: scale(1.14) translate3d(0, -1.3%, 0); } }
+    @keyframes venue-move { to { transform: scale(1.17) translate3d(0, -1.7%, 0); } }
+    @keyframes closing-drift { to { transform: scale(1.12) translate3d(0, -1.3%, 0); } }
+    @keyframes sparkle { 50% { transform: scale(1.85); opacity: .3; } }
+    @keyframes glowpass { to { transform: translateX(700px) rotate(12deg); } }
+    @keyframes falling { to { transform: translate3d(36px, 115svh, 0) rotate(340deg); opacity: .1; } }
+    @media (max-width: 400px) { .hero-topline { left: 18px; right: 18px; font-size: 8px; letter-spacing: .13em; } .frame, .entry::after { inset: 10px; } .scratch-wrap, .date-card { min-height: 306px; } }
+    @media (max-width: 360px) { .family-letter { padding: 12px; } .family { padding: 18px 10px; } .family p { font-size: 21px; } .venue-card h3 { font-size: 37px; } }
+    @media (max-height: 710px) and (orientation: portrait) { .countdown-wrap { margin-top: 15px; } .countdown-unit { padding: 7px 3px; } .countdown-value { font-size: 29px; } .countdown-label { margin-top: 4px; } }
+    @media (max-height: 520px) and (orientation: landscape) { .entry { overflow-y: auto; place-items: start center; } .entry-copy { padding-top: 26px; padding-bottom: calc(24px + var(--safe-bottom)); } .entry h1 { margin: 10px 0 5px; font-size: clamp(51px, 12vw, 70px); } .entry p { margin: 10px auto 17px; font-size: 18px; } .entry-skip { margin-top: 10px; } .hero { min-height: 100svh; min-height: 100dvh; } .hero-copy { margin-top: 10px; padding: 2px 14px; transform: translateY(-8px); } .hero-copy h2 { margin: 4px 0; font-size: clamp(52px, 10vw, 75px); } .hero-copy h2 em { margin: 7px 0 1px; } .hero-copy > p { font-size: 17px; } .countdown-wrap { width: min(100%, 310px); margin-top: 8px; } .countdown { gap: 4px; padding: 5px; } .countdown-unit { padding: 5px 3px; } .countdown-value { font-size: 25px; } .countdown-label { margin-top: 3px; font-size: 7px; } .hero-topline { top: 12px; } .frame { inset: 9px; } .discover { display: none; } }
+    @media (prefers-reduced-motion: reduce) { *, *::before, *::after { scroll-behavior: auto !important; animation: none !important; transition: none !important; } }
   </style>
 </head>
 <body>
-  <section class="entry" id="entry" aria-label="Invitation opening"><div class="entry-inner"><div class="overline">A wedding celebration</div><h1>Varadha<br>&amp; Vijay</h1><p>A keepsake, made especially for you.</p><button class="reveal" id="start">Tap to open the invitation</button><button class="skip" id="skip">Reveal details immediately</button></div></section>
-  <main class="invitation-flow">
-    <section class="scene palace-scene" id="welcome"><div class="scene-frame"></div><div class="topline"><span>25 · 10 · 2026</span><span class="seal">V V</span><span>Palakkad</span></div><i class="spark"></i><i class="spark"></i><i class="spark"></i><i class="petal p1"></i><i class="petal p2"></i><i class="petal p3"></i><div class="scene-copy"><div class="overline">Together with their families</div><h2>Varadha<em>&amp;</em>Vijay</h2><p>invite you to celebrate a promise made for a lifetime.</p><div class="countdown-wrap" aria-label="Countdown to the wedding muhurtham on 25 October 2026 at 10:30 AM"><div class="countdown-kicker" id="countdownTitle">Until the muhurtham</div><div class="countdown" aria-labelledby="countdownTitle"><div class="countdown-unit"><strong class="countdown-value" id="countdownDays">--</strong><span class="countdown-label">Days</span></div><div class="countdown-unit"><strong class="countdown-value" id="countdownHours">--</strong><span class="countdown-label">Hours</span></div><div class="countdown-unit"><strong class="countdown-value" id="countdownMinutes">--</strong><span class="countdown-label">Minutes</span></div><div class="countdown-unit"><strong class="countdown-value" id="countdownSeconds">--</strong><span class="countdown-label">Seconds</span></div></div><span class="sr-only" id="countdownStatus" aria-live="polite"></span></div></div><a class="discover" href="#blessings">Discover</a></section>
-    <section class="section section-light" id="blessings"><div class="kicker">With divine blessings</div><h1 class="heading">Sri Sathya Sai Baba</h1><div class="hairline">✦</div><p class="bodycopy">Sri Vasand Mohan A.P. &amp; Smt. Subha N.S. cordially invite you to celebrate the wedding of their beloved daughter, <em>Varadha A.V.</em>, with <em>Vijay J.</em></p></section>
-    <section class="keepsake" id="date"><div class="keepsake-bg"></div><div class="scratch-wrap" id="scratch"><div class="date-card"><div><div class="kicker">The wedding ceremony</div><div class="date-number">25</div><h3>October 2026</h3><p>SUNDAY · MUHURTHAM<br>10:30 AM – 11:30 AM</p></div></div><canvas class="scratch-canvas" id="scratchCanvas" aria-label="Scratch to reveal the date"></canvas><button class="reveal-now" id="revealDate">Reveal now</button><div class="scratch-guide">Scratch here ✦</div></div><div class="keepsake-caption"><div class="kicker">A private moment, for you</div><p>Gently scratch the gold foil to reveal the day.</p></div></section>
-    <section class="venue" id="venue"><div class="venue-card"><div class="overline">The ceremony</div><h3>Sree Parvathy<br>Mandapam</h3><p>Chandranagar, Palakkad</p><p>1202 Thulam 8</p><a class="button" href="https://maps.google.com/?q=Sree+Parvathy+Mandapam+Chandranagar+Palakkad" target="_blank" rel="noreferrer">Open directions</a></div></section>
-    <section class="section section-light details" id="details"><div class="kicker">With their beloved families</div><h2 class="heading">A Blessed Union</h2><div class="hairline">✦</div><div class="family-letter"><article class="family"><h4>Bride's family</h4><p>Sri Vasand Mohan A.P. &amp; Smt. Subha N.S.</p><small>Subha Nivas · Chetty Street · Sulthanpet<br>Palakkad – 678001 · 9447726721 · 9495926721</small></article><article class="family"><h4>Groom's family</h4><p>Sri Jayasankar A. &amp; Smt. Madhavikutty V.V.</p><small>Sreejayam · Durga Nagar · Kodumbu, Palakkad</small></article></div></section>
-    <footer class="ending"><div class="overline">We await your presence</div><h2>Varadha &amp; Vijay</h2><p>Your gracious presence will make this celebration complete.</p><button class="button" id="openRsvp">RSVP / Contact</button></footer>
+  <section class="entry" id="entry" aria-label="Invitation opening">
+    <div class="shimmer"></div>
+    <div class="entry-copy">
+      <div class="overline">A Sita–Rama Kalyanam celebration</div>
+      <h1>Vara Prasad<br>&amp; Gayatri</h1>
+      <p>A sacred invitation, made especially for you.</p>
+      <button class="gold-button" id="start" type="button">Tap to open the invitation</button>
+      <button class="entry-skip" id="skip" type="button">Reveal details immediately</button>
+    </div>
+  </section>
+
+  <main id="invitation">
+    <section class="hero" id="welcome">
+      <div class="frame"></div>
+      <div class="shimmer"></div>
+      <div class="hero-topline"><span>30 · 10 · 2026</span><span class="seal">V G</span><span>Ravivalasa</span></div>
+      <i class="petal p1"></i><i class="petal p2"></i><i class="petal p3"></i>
+      <div class="hero-copy">
+        <div class="overline">Together with the Saketi family</div>
+        <h2>Vara Prasad<em>&amp;</em>Gayatri</h2>
+        <p>invite you to witness their promise of a lifetime.</p>
+        <div class="countdown-wrap" aria-label="Countdown to the wedding muhurtham on 30 October 2026 at 7:49 AM">
+          <div class="countdown-kicker" id="countdownTitle">Until the muhurtham</div>
+          <div class="countdown" aria-labelledby="countdownTitle">
+            <div class="countdown-unit"><strong class="countdown-value" id="countdownDays">--</strong><span class="countdown-label">Days</span></div>
+            <div class="countdown-unit"><strong class="countdown-value" id="countdownHours">--</strong><span class="countdown-label">Hours</span></div>
+            <div class="countdown-unit"><strong class="countdown-value" id="countdownMinutes">--</strong><span class="countdown-label">Minutes</span></div>
+            <div class="countdown-unit"><strong class="countdown-value" id="countdownSeconds">--</strong><span class="countdown-label">Seconds</span></div>
+          </div>
+          <span class="sr-only" id="countdownStatus" aria-live="polite"></span>
+        </div>
+      </div>
+      <a class="discover" href="#blessings">Discover</a>
+    </section>
+
+    <section class="section blessing" id="blessings">
+      <div class="kicker">With divine blessings</div>
+      <h1 class="heading">Lord Venkateswara<br>&amp; Goddess Padmavathi</h1>
+      <div class="hairline">✦</div>
+      <p class="bodycopy">The Saketi Family cordially invites you to celebrate the wedding of <em>Vara Prasad</em> and <em>Gayatri</em>.</p>
+    </section>
+
+    <section class="keepsake" id="date">
+      <div class="scratch-wrap" id="scratch">
+        <div class="date-card">
+          <div>
+            <div class="kicker">The wedding ceremony</div>
+            <div class="date-number">30</div>
+            <h3>October 2026</h3>
+            <p>FRIDAY · MUHURTHAM<br>7:49 AM</p>
+          </div>
+        </div>
+        <canvas class="scratch-canvas" id="scratchCanvas" aria-label="Scratch to reveal the wedding date"></canvas>
+        <div class="scratch-hint">A golden reveal awaits</div>
+        <button class="reveal-now" id="revealDate" type="button">Reveal now</button>
+        <div class="scratch-guide">Scratch here ✦</div>
+      </div>
+      <div class="keepsake-caption"><div class="kicker">A private moment, for you</div><p>Gently scratch the gold foil to reveal the day.</p></div>
+    </section>
+
+    <section class="event-area" id="events">
+      <div class="event-card">
+        <article class="event-row">
+          <div class="event-label">Wedding ceremony</div>
+          <h3>Friday, 30 October</h3>
+          <p class="event-time">7:49 AM</p>
+          <p>Auspicious Muhurtham</p>
+        </article>
+        <article class="event-row">
+          <div class="event-label">Reception</div>
+          <h3>Friday, 30 October</h3>
+          <p class="event-time">11:00 AM</p>
+          <p>At Ravivalasa</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="venue" id="venue">
+      <div class="venue-card">
+        <div class="overline">The celebration venue</div>
+        <h3>Ravivalasa</h3>
+        <p>Ravivalasa Village · Garugubilli Mandal</p>
+        <p>Parvathipuram Manyam District</p>
+        <a class="gold-button" href="https://www.google.com/maps/search/?api=1&amp;query=Ravivalasa%20Village%2C%20Garugubilli%20Mandal%2C%20Parvathipuram%20Manyam%20District" target="_blank" rel="noreferrer">Open directions</a>
+      </div>
+    </section>
+
+    <section class="section details" id="family">
+      <div class="kicker">With love and blessings</div>
+      <h2 class="heading">A Sacred Union</h2>
+      <div class="hairline">✦</div>
+      <div class="family-letter">
+        <article class="family">
+          <h3>Hosted by</h3>
+          <p>The Saketi Family</p>
+          <small>Request the pleasure of your company as Vara Prasad and Gayatri begin their new chapter.</small>
+        </article>
+        <article class="family">
+          <h3>With blessings from</h3>
+          <p>Saketi Thatha &amp; Gangamma</p>
+          <small>A Sita–Rama Kalyanam celebration, shared with family and friends.</small>
+        </article>
+      </div>
+    </section>
+
+    <footer class="closing" id="celebrate">
+      <div class="shimmer"></div>
+      <div class="closing-copy">
+        <div class="overline">We await your presence</div>
+        <h2>Vara Prasad<br>&amp; Gayatri</h2>
+        <p>Your gracious presence will make this celebration complete.</p>
+        <a class="gold-button calendar-link" href="#date">View the celebration</a>
+      </div>
+    </footer>
   </main>
-  <nav class="dock" aria-label="Quick actions"><a href="#date" aria-label="Wedding date and time"><span class="dock-icon" aria-hidden="true">25</span><span class="dock-label">Date &amp; Time</span></a><a href="https://maps.google.com/?q=Sree+Parvathy+Mandapam+Chandranagar+Palakkad" target="_blank" rel="noreferrer" aria-label="Open directions in Google Maps"><span class="dock-icon" aria-hidden="true">↗</span><span class="dock-label">Directions</span></a><button class="dock-rsvp" id="dockRsvp" type="button"><span class="dock-icon" aria-hidden="true">✦</span><span class="dock-label">RSVP</span></button></nav>
-  <div class="modal" id="rsvp" role="dialog" aria-modal="true" aria-labelledby="rsvpTitle"><div class="modal-card"><h2 id="rsvpTitle">We look forward to celebrating with you</h2><p>Please contact the bride's family to RSVP.</p><a class="button" href="tel:+919447726721">Call to RSVP</a><br><button class="close" id="closeRsvp">Close</button></div></div>
+
+  <nav class="dock" aria-label="Quick actions">
+    <a href="#date" aria-label="Wedding date and time"><span class="dock-icon" aria-hidden="true">30</span><span>Date &amp; Time</span></a>
+    <a href="https://www.google.com/maps/search/?api=1&amp;query=Ravivalasa%20Village%2C%20Garugubilli%20Mandal%2C%20Parvathipuram%20Manyam%20District" target="_blank" rel="noreferrer" aria-label="Open directions in Google Maps"><span class="dock-icon" aria-hidden="true">↗</span><span>Directions</span></a>
+    <a class="dock-emphasis" href="#celebrate" aria-label="View final celebration message"><span class="dock-icon" aria-hidden="true">✦</span><span>Celebrate</span></a>
+  </nav>
+
   <script>
-    const entry=document.getElementById('entry');function begin(target){entry.classList.add('hide');entry.setAttribute('aria-hidden','true');if(target)document.querySelector(target).scrollIntoView({behavior:'smooth'});}document.getElementById('start').addEventListener('click',()=>begin());document.getElementById('skip').addEventListener('click',()=>begin('#details'));
-    const shell=document.getElementById('scratch'),canvas=document.getElementById('scratchCanvas'),ctx=canvas.getContext('2d');let active=false,lastPoint=null,checks=0;
-    function configureScratch(){if(shell.classList.contains('done'))return;const r=canvas.getBoundingClientRect(),d=Math.min(window.devicePixelRatio||1,2);canvas.width=Math.round(r.width*d);canvas.height=Math.round(r.height*d);ctx.setTransform(d,0,0,d,0,0);const g=ctx.createLinearGradient(0,0,r.width,r.height);g.addColorStop(0,'#f7dda1');g.addColorStop(.42,'#c89436');g.addColorStop(1,'#8a4d20');ctx.globalCompositeOperation='source-over';ctx.fillStyle=g;ctx.fillRect(0,0,r.width,r.height);ctx.fillStyle='rgba(255,249,226,.78)';ctx.font='italic 25px Cormorant Garamond';ctx.textAlign='center';ctx.fillText('A little gold foil awaits',r.width/2,r.height/2-2);}
-    function point(e){const r=canvas.getBoundingClientRect();return{x:e.clientX-r.left,y:e.clientY-r.top}}function erase(e){if(!active)return;e.preventDefault();const p=point(e);ctx.globalCompositeOperation='destination-out';ctx.lineCap='round';ctx.lineWidth=52;ctx.beginPath();ctx.moveTo(lastPoint.x,lastPoint.y);ctx.lineTo(p.x,p.y);ctx.stroke();lastPoint=p;if(++checks%10===0)checkScratch();}function checkScratch(){const data=ctx.getImageData(0,0,canvas.width,canvas.height).data;let clear=0,total=0;for(let i=3;i<data.length;i+=64){total++;if(data[i]<20)clear++;}if(clear/total>.32)finishScratch();}function finishScratch(){shell.classList.add('done');canvas.style.opacity='0';document.getElementById('revealDate').setAttribute('tabindex','-1');}
-    canvas.addEventListener('pointerdown',e=>{active=true;lastPoint=point(e);canvas.setPointerCapture(e.pointerId);erase(e)});canvas.addEventListener('pointermove',erase);canvas.addEventListener('pointerup',()=>{active=false;checkScratch()});canvas.addEventListener('pointercancel',()=>active=false);document.getElementById('revealDate').addEventListener('click',finishScratch);window.addEventListener('resize',configureScratch);configureScratch();
-    const modal=document.getElementById('rsvp');function showRsvp(){modal.classList.add('open')}function hideRsvp(){modal.classList.remove('open')}document.getElementById('openRsvp').addEventListener('click',showRsvp);document.getElementById('dockRsvp').addEventListener('click',showRsvp);document.getElementById('closeRsvp').addEventListener('click',hideRsvp);modal.addEventListener('click',e=>{if(e.target===modal)hideRsvp()});
-    const weddingTime=new Date('2026-10-25T10:30:00+05:30').getTime(),countdownTitle=document.getElementById('countdownTitle'),countdownStatus=document.getElementById('countdownStatus'),countdownParts={days:document.getElementById('countdownDays'),hours:document.getElementById('countdownHours'),minutes:document.getElementById('countdownMinutes'),seconds:document.getElementById('countdownSeconds')};function updateCountdown(){let remaining=Math.max(0,weddingTime-Date.now()),days=Math.floor(remaining/86400000);remaining-=days*86400000;const hours=Math.floor(remaining/3600000);remaining-=hours*3600000;const minutes=Math.floor(remaining/60000),seconds=Math.floor((remaining-minutes*60000)/1000),pad=value=>String(value).padStart(2,'0');countdownParts.days.textContent=pad(days);countdownParts.hours.textContent=pad(hours);countdownParts.minutes.textContent=pad(minutes);countdownParts.seconds.textContent=pad(seconds);if(weddingTime<=Date.now()){countdownTitle.textContent='The celebration has begun';countdownStatus.textContent='The wedding celebration has begun.';return true;}return false;}if(!updateCountdown()){const countdownTimer=window.setInterval(()=>{if(updateCountdown())window.clearInterval(countdownTimer)},1000)}
-  </script>
-  <script>
-    /* Same visual sequence as Varadha & Vijay, personalized for Vara Prasad and Gayatri. */
-    (() => {
-      const couple = 'Vara Prasad & Gayatri';
-      const mapUrl = 'https://www.google.com/maps/search/?api=1&query=Ravivalasa%20Village%2C%20Garugubilli%20Mandal%2C%20Parvathipuram%20Manyam%20District';
-      document.title = couple + ' | A Wedding Celebration';
-      document.querySelector('meta[name="description"]').content = 'The wedding celebration of Vara Prasad and Gayatri — 30 October 2026, Ravivalasa.';
+    const entry = document.getElementById("entry");
+    function begin(target) {
+      entry.setAttribute("hidden", "");
+      entry.setAttribute("aria-hidden", "true");
+      if (target) document.querySelector(target).scrollIntoView({ behavior: "smooth" });
+    }
+    document.getElementById("start").addEventListener("click", () => begin());
+    document.getElementById("skip").addEventListener("click", () => begin("#date"));
 
-      document.querySelector('.entry .overline').textContent = 'A Sita–Rama Kalyanam celebration';
-      document.querySelector('.entry h1').innerHTML = 'Vara Prasad<br>&amp; Gayatri';
-      document.querySelector('.entry p').textContent = 'A keepsake, made especially for you.';
+    const scratch = document.getElementById("scratch");
+    const canvas = document.getElementById("scratchCanvas");
+    const context = canvas.getContext("2d");
+    let isScratching = false;
+    let lastPoint = null;
+    let checks = 0;
 
-      const topline = document.querySelectorAll('.topline span');
-      topline[0].textContent = '30 · 10 · 2026';
-      topline[1].textContent = 'V G';
-      topline[2].textContent = 'Ravivalasa';
-      document.querySelector('.scene-copy .overline').textContent = 'Together with the Saketi family';
-      document.querySelector('.scene-copy h2').innerHTML = 'Vara Prasad<em>&amp;</em>Gayatri';
-      document.querySelector('.scene-copy > p').textContent = 'invite you to celebrate a promise made for a lifetime.';
-      document.querySelector('.countdown-wrap').setAttribute('aria-label', 'Countdown to the wedding muhurtham on 30 October 2026 at 7:49 AM');
-
-      document.querySelector('#blessings .heading').innerHTML = 'Lord Venkateswara<br>&amp; Goddess Padmavathi';
-      document.querySelector('#blessings .bodycopy').innerHTML = 'The Saketi Family cordially invite you to celebrate the wedding of <em>Vara Prasad</em> and <em>Gayatri</em>.';
-
-      document.querySelector('.date-number').textContent = '30';
-      document.querySelector('.date-card h3').textContent = 'October 2026';
-      document.querySelector('.date-card p').innerHTML = 'FRIDAY · MUHURTHAM<br>7:49 AM · RECEPTION 11:00 AM';
-      canvas.setAttribute('aria-label', 'Scratch to reveal the wedding date');
-
-      const venueTitle = document.querySelector('.venue-card h3');
-      venueTitle.innerHTML = 'Ravivalasa<br>Village';
-      const venueLines = document.querySelectorAll('.venue-card p');
-      venueLines[0].textContent = 'Garugubilli Mandal';
-      venueLines[1].textContent = 'Parvathipuram Manyam District';
-      document.querySelectorAll('a[href*="Sree+Parvathy"]').forEach(link => link.href = mapUrl);
-
-      document.querySelector('#details .kicker').textContent = 'With love and blessings';
-      document.querySelector('#details .heading').textContent = 'A Sacred Union';
-      document.querySelector('.family-letter').innerHTML = '<article class="family"><h4>Hosted by</h4><p>The Saketi Family</p><small>Request the pleasure of your company as Vara Prasad and Gayatri begin their new chapter.</small></article><article class="family"><h4>With blessings from</h4><p>Saketi Thatha &amp; Gangamma</p><small>A Sita–Rama Kalyanam celebration, shared with family and friends.</small></article>';
-
-      document.querySelector('.ending .overline').textContent = 'We await your presence';
-      document.querySelector('.ending h2').textContent = couple;
-      const endingButton = document.getElementById('openRsvp');
-      endingButton.textContent = 'Wedding details';
-      document.querySelector('.dock a[href="#date"] .dock-icon').textContent = '30';
-      document.querySelector('.dock a[href*="Sree+Parvathy"]').href = mapUrl;
-      document.getElementById('dockRsvp').innerHTML = '<span class="dock-icon" aria-hidden="true">✦</span><span class="dock-label">Celebrate</span>';
-
-      const modalTitle = document.getElementById('rsvpTitle');
-      modalTitle.textContent = 'We look forward to celebrating with you';
-      document.querySelector('#rsvp p').textContent = 'Wedding muhurtham is at 7:49 AM, followed by the reception at 11:00 AM.';
-      const modalLink = document.querySelector('#rsvp a.button');
-      modalLink.href = '#date';
-      modalLink.textContent = 'View wedding time';
-      modalLink.addEventListener('click', () => document.getElementById('rsvp').classList.remove('open'));
-
-      const varaWeddingTime = new Date('2026-10-30T07:49:00+05:30').getTime();
-      const parts = { days: document.getElementById('countdownDays'), hours: document.getElementById('countdownHours'), minutes: document.getElementById('countdownMinutes'), seconds: document.getElementById('countdownSeconds') };
-      function updateVaraCountdown() {
-        let remaining = Math.max(0, varaWeddingTime - Date.now());
-        const days = Math.floor(remaining / 86400000); remaining -= days * 86400000;
-        const hours = Math.floor(remaining / 3600000); remaining -= hours * 3600000;
-        const minutes = Math.floor(remaining / 60000);
-        const seconds = Math.floor((remaining - minutes * 60000) / 1000);
-        const pad = value => String(value).padStart(2, '0');
-        parts.days.textContent = pad(days); parts.hours.textContent = pad(hours); parts.minutes.textContent = pad(minutes); parts.seconds.textContent = pad(seconds);
-        if (varaWeddingTime <= Date.now()) document.getElementById('countdownTitle').textContent = 'The celebration has begun';
+    function configureScratch() {
+      if (scratch.classList.contains("done")) return;
+      const rect = canvas.getBoundingClientRect();
+      const ratio = Math.min(window.devicePixelRatio || 1, 2);
+      canvas.width = Math.round(rect.width * ratio);
+      canvas.height = Math.round(rect.height * ratio);
+      context.setTransform(ratio, 0, 0, ratio, 0, 0);
+      const foil = context.createLinearGradient(0, 0, rect.width, rect.height);
+      foil.addColorStop(0, "#f7dda1");
+      foil.addColorStop(.42, "#c89436");
+      foil.addColorStop(1, "#86491f");
+      context.globalCompositeOperation = "source-over";
+      context.fillStyle = foil;
+      context.fillRect(0, 0, rect.width, rect.height);
+      context.strokeStyle = "rgba(255, 245, 210, .34)";
+      context.lineWidth = 1;
+      for (let y = 18; y < rect.height; y += 18) {
+        context.beginPath();
+        context.moveTo(0, y);
+        context.lineTo(rect.width, y - 32);
+        context.stroke();
       }
-      updateVaraCountdown();
-      window.setInterval(updateVaraCountdown, 250);
-    })();
+    }
+    function getPoint(event) {
+      const rect = canvas.getBoundingClientRect();
+      return { x: event.clientX - rect.left, y: event.clientY - rect.top };
+    }
+    function erase(event) {
+      if (!isScratching) return;
+      event.preventDefault();
+      const point = getPoint(event);
+      context.globalCompositeOperation = "destination-out";
+      context.lineCap = "round";
+      context.lineWidth = 54;
+      context.beginPath();
+      context.moveTo(lastPoint.x, lastPoint.y);
+      context.lineTo(point.x, point.y);
+      context.stroke();
+      lastPoint = point;
+      if (++checks % 10 === 0) checkScratch();
+    }
+    function checkScratch() {
+      const pixels = context.getImageData(0, 0, canvas.width, canvas.height).data;
+      let clear = 0;
+      let total = 0;
+      for (let index = 3; index < pixels.length; index += 64) {
+        total++;
+        if (pixels[index] < 20) clear++;
+      }
+      if (clear / total > .32) revealScratch();
+    }
+    function revealScratch() {
+      scratch.classList.add("done");
+      canvas.style.opacity = "0";
+      document.getElementById("revealDate").setAttribute("tabindex", "-1");
+    }
+    canvas.addEventListener("pointerdown", event => {
+      isScratching = true;
+      lastPoint = getPoint(event);
+      canvas.setPointerCapture(event.pointerId);
+      erase(event);
+    });
+    canvas.addEventListener("pointermove", erase);
+    canvas.addEventListener("pointerup", () => { isScratching = false; checkScratch(); });
+    canvas.addEventListener("pointercancel", () => { isScratching = false; });
+    document.getElementById("revealDate").addEventListener("click", revealScratch);
+    window.addEventListener("resize", configureScratch);
+    configureScratch();
+
+    const weddingTime = new Date("2026-10-30T07:49:00+05:30").getTime();
+    const countdownTitle = document.getElementById("countdownTitle");
+    const countdownStatus = document.getElementById("countdownStatus");
+    const countdownParts = {
+      days: document.getElementById("countdownDays"),
+      hours: document.getElementById("countdownHours"),
+      minutes: document.getElementById("countdownMinutes"),
+      seconds: document.getElementById("countdownSeconds")
+    };
+    function updateCountdown() {
+      let remaining = Math.max(0, weddingTime - Date.now());
+      const days = Math.floor(remaining / 86400000);
+      remaining -= days * 86400000;
+      const hours = Math.floor(remaining / 3600000);
+      remaining -= hours * 3600000;
+      const minutes = Math.floor(remaining / 60000);
+      const seconds = Math.floor((remaining - minutes * 60000) / 1000);
+      const pad = value => String(value).padStart(2, "0");
+      countdownParts.days.textContent = pad(days);
+      countdownParts.hours.textContent = pad(hours);
+      countdownParts.minutes.textContent = pad(minutes);
+      countdownParts.seconds.textContent = pad(seconds);
+      if (weddingTime <= Date.now()) {
+        countdownTitle.textContent = "The celebration has begun";
+        countdownStatus.textContent = "The wedding celebration has begun.";
+        return true;
+      }
+      return false;
+    }
+    if (!updateCountdown()) {
+      const timer = window.setInterval(() => { if (updateCountdown()) window.clearInterval(timer); }, 1000);
+    }
   </script>
 </body>
 </html>
